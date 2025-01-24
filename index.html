@@ -11,7 +11,7 @@
 
     if (code) {
       // Redirect to the app with the custom scheme
-      window.location.href = `com.example.ringtone_app://oauthredirect?code=${code}`;
+      window.location.replace = `com.example.ringtone_app://oauthredirect?code=${code}`;
     } else {
       document.body.innerText = 'Authorization failed or no code provided.';
     }
